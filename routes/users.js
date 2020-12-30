@@ -13,7 +13,7 @@ router.get('/login', function(req, res, next) {
 
 router.get('/logout', function(req, res, next) {
   req.session.user = null;
-  res.redirect('/login');
+  res.redirect('/');
 });
 
 router.post('/login',async function(req,res,next){
